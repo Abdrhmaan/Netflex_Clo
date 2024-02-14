@@ -1,0 +1,122 @@
+.t-wrapper {
+    padding: 20px;
+    margin-right: 10px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+  }
+  
+
+.t-heading {
+  align-self: center; /* Adjusted alignment for responsiveness */
+}
+
+.t-heading > * {
+  font-size: 1.5rem; /* Adjusted font size for responsiveness */
+  font-weight: bold;
+}
+
+.t-heading span:nth-of-type(2) {
+  color: var(--orange);
+}
+
+.t-blur1 {
+  left: 0; /* Adjusted position for responsiveness */
+  top: 16rem;
+}
+
+.t-blur2 {
+  top: 9rem;
+  left: 0;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem; /* Adjusted padding for responsiveness */
+  width: 100%; /* Adjusted width for responsiveness */
+  max-width: 30rem; /* Maximum width for large screens */
+  background: rgba(255, 255, 255, 0.26);
+  border: 7px solid var(--blueCard);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+}
+
+.testimonial > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.certicate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem; /* Adjusted padding for responsiveness */
+  width: 100%; /* Adjusted width for responsiveness */
+  max-width: 30rem; /* Maximum width for large screens */
+  background: rgba(255, 255, 255, 0.26);
+
+  border: 7px solid var(--blueCard);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+}
+
+.certicate > img {
+  margin-top: 30px;
+  width: 70px;
+  height: 70px;
+}
+
+.testimonial > span {
+  color: var(--gray);
+}
+
+/* slider */
+.t-wrapper .swiper {
+  width: 100%;
+  height: 70%;
+}
+
+.t-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.t-wrapper .swiper-pagination-bullet-active {
+  background: var(--orange);
+}
+@media screen and (max-width: 480px) {
+    .t-heading > * {
+      font-size: 1.2rem; /* Further reduced font size for smaller screens */
+    }
+  
+    .testimonial > img  {
+      padding: 20px;
+    }
+  
+    .t-wrapper {
+      padding-bottom: 10px;
+      margin-right: 20px; 
+      display: flex;
+      gap: 2rem; /* Remove bottom padding */
+    }
+  
+    .testimonial {
+      max-width: 100%; /* Full width for small screens */
+    }
+  
+    .certicate {
+      max-width: 100%; /* Full width for small screens */
+    } 
+  }
+  
